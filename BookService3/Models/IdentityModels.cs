@@ -23,11 +23,16 @@ namespace BookService3.Models
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
+            this.Database.Log = s => System.Diagnostics.Debug.WriteLine(s);
         }
         
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<BookService.Models.Author> Authors { get; set; }
+
+        public System.Data.Entity.DbSet<BookService.Models.Book> Books { get; set; }
     }
 }
