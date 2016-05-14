@@ -28,6 +28,8 @@ namespace BookService3
               "~/Scripts/knockout-{version}.js",
               "~/Scripts/angular.js",
               "~/Scripts/app.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/ngapp").IncludeDirectory("~/NgApp", "*.js", true));
         }
     }
 }

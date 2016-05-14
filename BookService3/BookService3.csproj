@@ -265,6 +265,10 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="NgApp\app.module.js" />
+    <Content Include="NgApp\main.js" />
+    <Content Include="NgApp\services\author_svc.js" />
+    <Content Include="NgApp\services\book_svc.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
